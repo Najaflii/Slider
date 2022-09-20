@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.slider .slider .imgs {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  position: relative;
+}
+
+.slider {
+  height: 75%;
+  max-height: 300px;
+}
+
+.slider .imgs {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider .img {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  left: 100%;
+  -webkit-animation: 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0s left;
+          animation: 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0s left;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-size: cover !important;
+  background-position: 50% !important;
+}
+
+.slider .img:nth-of-type(1) {
+  background: url("https://bestwallpapers.net/desktop/wp-content/uploads/2020/03/HD-Wallpaper-16.jpeg");
+}
+
+.slider .img:nth-of-type(2) {
+  background: url("https://th.bing.com/th/id/R.0b11371ad1296ba63fc463fd4149a5a3?rik=0GwHoH4xeDO4lA&pid=ImgRaw&r=0");
+}
+
+.slider .img:nth-of-type(3) {
+  background: url("https://th.bing.com/th/id/R.6cc3d9234c2b85a512c1901a1877337a?rik=2cz%2fcRb%2fvnaOtQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-fpEFUD90X9o%2fTwg7Tt2NZSI%2fAAAAAAAAA2s%2fU74mr-bYVMA%2fs1600%2fhd%2bwallpapers%2b%2525287%252529.jpg&ehk=VREtQSvcn5VgI2ybfOGkFHL7QLkx0fRsyNsGwp5RWEA%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.slider .img:nth-of-type(4) {
+  background: url("https://3.bp.blogspot.com/-uiE-lz9boCE/Uv3smEC2X3I/AAAAAAAAFOo/mPEyXnRM4jw/s1600/8.jpg");
+}
+
+.slider .img span {
+  padding: 7px 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  color: #f0f0f0;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.dots {
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.active-dot {
+  background: red;
+  cursor: default;
+}
+
+@-webkit-keyframes leftNext {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes leftNext {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+@-webkit-keyframes leftCurr {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes leftCurr {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@-webkit-keyframes rightNext {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes rightNext {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+@-webkit-keyframes rightCurr {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes rightCurr {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
